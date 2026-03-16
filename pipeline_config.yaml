@@ -1,0 +1,37 @@
+# Motion Capture–AI VR Animation Pipeline — Configuration
+# =========================================================
+# All parameters correspond to values reported in the manuscript:
+# He et al., "The Role of Motion Capture and AI in VR-Based 3D Animation
+# Design and Production", submitted to The Visual Computer, 2025.
+
+kalman:
+  gain: 0.3               # Kalman gain K (paper value; range 0.2–0.4)
+  measurement_noise: 0.01 # Sensor noise variance
+  process_noise: 0.001    # Low process noise → prioritise stability
+
+ik_solver:
+  tolerance: 1.0e-3       # Positional convergence threshold ε (metres)
+  max_iterations: 100     # Hard iteration cap
+  learning_rate: 0.01     # Gradient descent step size
+
+cnn_lstm:
+  n_markers: 68           # Facial markers
+  n_blendshapes: 52       # Output blendshape weights
+  window_size: 16         # Temporal context window
+  cnn_channels: 64        # Conv1D feature maps
+  lstm_hidden: 128        # LSTM hidden size
+  lstm_layers: 2
+  learning_rate: 1.0e-3
+  epochs: 100
+  early_stopping_patience: 10
+  loss: mse
+
+rendering:
+  target_fps: 90
+  max_latency_ms: 20      # VR latency budget
+
+preprocessing:
+  target_fps: 90
+  source_fps: 120
+  max_velocity_threshold: 5.0
+  target_body_height_m: 1.75

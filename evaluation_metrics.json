@@ -1,0 +1,50 @@
+{
+  "motion_capture_systems": {
+    "optical_vicon": {
+      "accuracy_pct": 95.0,
+      "cost_usd": 200000,
+      "latency_ms": 8.2,
+      "setup_time_h": 2.5
+    },
+    "inertial_xsens": {
+      "accuracy_pct": 85.0,
+      "cost_usd": 15000,
+      "latency_ms": 12.5,
+      "setup_time_h": 0.5
+    },
+    "markerless_deepmotion": {
+      "accuracy_pct": 70.0,
+      "cost_usd": 10000,
+      "latency_ms": 18.7,
+      "setup_time_h": 0.1
+    }
+  },
+  "pipeline_performance": {
+    "before_ai_integration": {
+      "production_time_days": 14,
+      "motion_cleanup_manual_h": 8.0,
+      "facial_animation_h": 6.0,
+      "retargeting_errors_pct": 22.0
+    },
+    "after_ai_integration": {
+      "production_time_days": 7,
+      "motion_cleanup_manual_h": 1.6,
+      "facial_animation_h": 1.2,
+      "retargeting_errors_pct": 5.0
+    },
+    "improvement_pct": {
+      "production_time": 50.0,
+      "motion_cleanup": 80.0,
+      "facial_animation": 80.0,
+      "retargeting_accuracy": 77.3
+    }
+  },
+  "vr_rendering": {
+    "target_fps": 90,
+    "achieved_fps": 90,
+    "mean_latency_ms": 17.4,
+    "max_latency_ms": 19.8,
+    "latency_budget_ms": 20,
+    "budget_compliance_pct": 98.2
+  }
+}

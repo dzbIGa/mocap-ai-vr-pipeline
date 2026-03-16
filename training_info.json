@@ -1,0 +1,8 @@
+{
+  "epochs_trained": 100,
+  "final_val_mse": 0.0023,
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "loss": "MSE",
+  "early_stopping": true
+}
