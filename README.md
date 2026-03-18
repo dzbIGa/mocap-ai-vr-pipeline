@@ -1,43 +1,37 @@
 # Enhancing VR-Based 3D Animation: Motion Capture and AI Synergy
 
-This repository contains code and example datasets associated with the manuscript:
+This repository contains code and example data associated with the manuscript.
 
-**“Enhancing VR-Based 3D Animation: Motion Capture and AI Synergy”**
+## What is inside
+- Example motion capture data  
+- Pipeline scripts  
+- Basic configuration files  
 
-The repository is provided to support transparency, reproducibility, and further research.
-
-## Contents
-
-* Example motion capture data
-* Pipeline scripts
-* Sample configurations
-
-## Dependencies
-
-* Python 3.x
-* NumPy
-* SciPy
+## Requirements
+- Python 3.x  
+- NumPy  
+- SciPy  
 
 ## How to run
 
-1. Clone the repository:
-   git clone https://github.com/dzbIGa/mocap-ai-vr-pipeline.git
+1. Clone repository:
+git clone https://github.com/dzbIGa/mocap-ai-vr-pipeline.git
 
 2. Install dependencies:
-   pip install -r requirements.txt
+pip install -r requirements.txt
 
-3. Run scripts following the pipeline described in the article.
+3. Run scripts following the pipeline described in the paper.
 
 ## Reproducibility
 
-The code and data correspond to the methodology described in the manuscript and allow reproduction of the results.
+The provided materials correspond to the methodology described in the manuscript and allow reproduction of the main workflow.
 
-## Data and DOI
+## Data (DOI)
 
 https://doi.org/10.5281/zenodo.19045806
 
 ## Citation
 
-If you use this repository, please cite the paper:
+If you use this repository, please cite:
 
 Enhancing VR-Based 3D Animation: Motion Capture and AI Synergy
